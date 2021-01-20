@@ -4,8 +4,9 @@
 
 ## App packaging
 
-
 ## Build files 
+xcuserdata/
 .build/
+DerivedData/
 
 ## Secrets
