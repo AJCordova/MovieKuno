@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */; };
+		A7012DB725B7E30400DEDC24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DB625B7E30400DEDC24 /* ContentView.swift */; };
+		A7012DB925B7E30400DEDC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7012DB825B7E30400DEDC24 /* Assets.xcassets */; };
+		A7012DBC25B7E30400DEDC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7012DBB25B7E30400DEDC24 /* Preview Assets.xcassets */; };
+		A7012DCC25B7E30500DEDC24 /* MovieKunoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DCB25B7E30500DEDC24 /* MovieKunoTests.swift */; };
+		A7012DD725B7E30500DEDC24 /* MovieKunoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DD625B7E30500DEDC24 /* MovieKunoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7012DC825B7E30500DEDC24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7012DA925B7E30400DEDC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7012DB025B7E30400DEDC24;
+			remoteInfo = MovieKuno;
+		};
+		A7012DD325B7E30500DEDC24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7012DA925B7E30400DEDC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7012DB025B7E30400DEDC24;
+			remoteInfo = MovieKuno;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7012DB125B7E30400DEDC24 /* MovieKuno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieKuno.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieKunoApp.swift; sourceTree = "<group>"; };
+		A7012DB625B7E30400DEDC24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7012DB825B7E30400DEDC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7012DBB25B7E30400DEDC24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7012DC225B7E30400DEDC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7012DC725B7E30500DEDC24 /* MovieKunoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieKunoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7012DCB25B7E30500DEDC24 /* MovieKunoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieKunoTests.swift; sourceTree = "<group>"; };
+		A7012DCD25B7E30500DEDC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7012DD225B7E30500DEDC24 /* MovieKunoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieKunoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7012DD625B7E30500DEDC24 /* MovieKunoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieKunoUITests.swift; sourceTree = "<group>"; };
+		A7012DD825B7E30500DEDC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7012DAE25B7E30400DEDC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7012DC425B7E30500DEDC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7012DCF25B7E30500DEDC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7012DA825B7E30400DEDC24 = {
+			isa = PBXGroup;
+			children = (
+				A7012DB325B7E30400DEDC24 /* MovieKuno */,
+				A7012DCA25B7E30500DEDC24 /* MovieKunoTests */,
+				A7012DD525B7E30500DEDC24 /* MovieKunoUITests */,
+				A7012DB225B7E30400DEDC24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7012DB225B7E30400DEDC24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7012DB125B7E30400DEDC24 /* MovieKuno.app */,
+				A7012DC725B7E30500DEDC24 /* MovieKunoTests.xctest */,
+				A7012DD225B7E30500DEDC24 /* MovieKunoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7012DB325B7E30400DEDC24 /* MovieKuno */ = {
+			isa = PBXGroup;
+			children = (
+				A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */,
+				A7012DB625B7E30400DEDC24 /* ContentView.swift */,
+				A7012DB825B7E30400DEDC24 /* Assets.xcassets */,
+				A7012DC225B7E30400DEDC24 /* Info.plist */,
+				A7012DBA25B7E30400DEDC24 /* Preview Content */,
+			);
+			path = MovieKuno;
+			sourceTree = "<group>";
+		};
+		A7012DBA25B7E30400DEDC24 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7012DBB25B7E30400DEDC24 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7012DCA25B7E30500DEDC24 /* MovieKunoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7012DCB25B7E30500DEDC24 /* MovieKunoTests.swift */,
+				A7012DCD25B7E30500DEDC24 /* Info.plist */,
+			);
+			path = MovieKunoTests;
+			sourceTree = "<group>";
+		};
+		A7012DD525B7E30500DEDC24 /* MovieKunoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7012DD625B7E30500DEDC24 /* MovieKunoUITests.swift */,
+				A7012DD825B7E30500DEDC24 /* Info.plist */,
+			);
+			path = MovieKunoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7012DB025B7E30400DEDC24 /* MovieKuno */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7012DDB25B7E30500DEDC24 /* Build configuration list for PBXNativeTarget "MovieKuno" */;
+			buildPhases = (
+				A7012DAD25B7E30400DEDC24 /* Sources */,
+				A7012DAE25B7E30400DEDC24 /* Frameworks */,
+				A7012DAF25B7E30400DEDC24 /* Resources */,
+				A727A2AF25B80667006EE7C4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieKuno;
+			productName = MovieKuno;
+			productReference = A7012DB125B7E30400DEDC24 /* MovieKuno.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7012DC625B7E30500DEDC24 /* MovieKunoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7012DDE25B7E30500DEDC24 /* Build configuration list for PBXNativeTarget "MovieKunoTests" */;
+			buildPhases = (
+				A7012DC325B7E30500DEDC24 /* Sources */,
+				A7012DC425B7E30500DEDC24 /* Frameworks */,
+				A7012DC525B7E30500DEDC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7012DC925B7E30500DEDC24 /* PBXTargetDependency */,
+			);
+			name = MovieKunoTests;
+			productName = MovieKunoTests;
+			productReference = A7012DC725B7E30500DEDC24 /* MovieKunoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7012DD125B7E30500DEDC24 /* MovieKunoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7012DE125B7E30500DEDC24 /* Build configuration list for PBXNativeTarget "MovieKunoUITests" */;
+			buildPhases = (
+				A7012DCE25B7E30500DEDC24 /* Sources */,
+				A7012DCF25B7E30500DEDC24 /* Frameworks */,
+				A7012DD025B7E30500DEDC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7012DD425B7E30500DEDC24 /* PBXTargetDependency */,
+			);
+			name = MovieKunoUITests;
+			productName = MovieKunoUITests;
+			productReference = A7012DD225B7E30500DEDC24 /* MovieKunoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7012DA925B7E30400DEDC24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A7012DB025B7E30400DEDC24 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A7012DC625B7E30500DEDC24 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A7012DB025B7E30400DEDC24;
+					};
+					A7012DD125B7E30500DEDC24 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A7012DB025B7E30400DEDC24;
+					};
+				};
+			};
+			buildConfigurationList = A7012DAC25B7E30400DEDC24 /* Build configuration list for PBXProject "MovieKuno" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7012DA825B7E30400DEDC24;
+			productRefGroup = A7012DB225B7E30400DEDC24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7012DB025B7E30400DEDC24 /* MovieKuno */,
+				A7012DC625B7E30500DEDC24 /* MovieKunoTests */,
+				A7012DD125B7E30500DEDC24 /* MovieKunoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7012DAF25B7E30400DEDC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7012DBC25B7E30400DEDC24 /* Preview Assets.xcassets in Resources */,
+				A7012DB925B7E30400DEDC24 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7012DC525B7E30500DEDC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7012DD025B7E30500DEDC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A727A2AF25B80667006EE7C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7012DAD25B7E30400DEDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7012DB725B7E30400DEDC24 /* ContentView.swift in Sources */,
+				A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7012DC325B7E30500DEDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7012DCC25B7E30500DEDC24 /* MovieKunoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7012DCE25B7E30500DEDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7012DD725B7E30500DEDC24 /* MovieKunoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7012DC925B7E30500DEDC24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7012DB025B7E30400DEDC24 /* MovieKuno */;
+			targetProxy = A7012DC825B7E30500DEDC24 /* PBXContainerItemProxy */;
+		};
+		A7012DD425B7E30500DEDC24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7012DB025B7E30400DEDC24 /* MovieKuno */;
+			targetProxy = A7012DD325B7E30500DEDC24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A7012DD925B7E30500DEDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7012DDA25B7E30500DEDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7012DDC25B7E30500DEDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MovieKuno/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MovieKuno/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lig-training.MovieKuno";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7012DDD25B7E30500DEDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MovieKuno/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MovieKuno/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lig-training.MovieKuno";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7012DDF25B7E30500DEDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovieKunoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lig-training.MovieKunoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieKuno.app/MovieKuno";
+			};
+			name = Debug;
+		};
+		A7012DE025B7E30500DEDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovieKunoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lig-training.MovieKunoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieKuno.app/MovieKuno";
+			};
+			name = Release;
+		};
+		A7012DE225B7E30500DEDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovieKunoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lig-training.MovieKunoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieKuno;
+			};
+			name = Debug;
+		};
+		A7012DE325B7E30500DEDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovieKunoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lig-training.MovieKunoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovieKuno;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7012DAC25B7E30400DEDC24 /* Build configuration list for PBXProject "MovieKuno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7012DD925B7E30500DEDC24 /* Debug */,
+				A7012DDA25B7E30500DEDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7012DDB25B7E30500DEDC24 /* Build configuration list for PBXNativeTarget "MovieKuno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7012DDC25B7E30500DEDC24 /* Debug */,
+				A7012DDD25B7E30500DEDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7012DDE25B7E30500DEDC24 /* Build configuration list for PBXNativeTarget "MovieKunoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7012DDF25B7E30500DEDC24 /* Debug */,
+				A7012DE025B7E30500DEDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7012DE125B7E30500DEDC24 /* Build configuration list for PBXNativeTarget "MovieKunoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7012DE225B7E30500DEDC24 /* Debug */,
+				A7012DE325B7E30500DEDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7012DA925B7E30400DEDC24 /* Project object */;
+}
