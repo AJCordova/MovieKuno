@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Movie: Codable, Hashable {
     let id: Int
     let title: String
