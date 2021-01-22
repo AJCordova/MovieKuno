@@ -14,7 +14,7 @@
 		2973340425B92A4100BC4606 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973340325B92A4100BC4606 /* MovieModel.swift */; };
 		2973340F25B941D200BC4606 /* RowContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973340E25B941D200BC4606 /* RowContainerView.swift */; };
 		2973342125B96F9900BC4606 /* HomeEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973342025B96F9900BC4606 /* HomeEnums.swift */; };
-		297F193E25B83EA40046416D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F193D25B83EA40046416D /* SearchView.swift */; };
+		29F297A225BA695A00EF3936 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F297A125BA695A00EF3936 /* SearchView.swift */; };
 		A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */; };
 		A7012DB725B7E30400DEDC24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DB625B7E30400DEDC24 /* ContentView.swift */; };
 		A7012DB925B7E30400DEDC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7012DB825B7E30400DEDC24 /* Assets.xcassets */; };
@@ -48,7 +48,7 @@
 		2973340325B92A4100BC4606 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		2973340E25B941D200BC4606 /* RowContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowContainerView.swift; sourceTree = "<group>"; };
 		2973342025B96F9900BC4606 /* HomeEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEnums.swift; sourceTree = "<group>"; };
-		297F193D25B83EA40046416D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchView.swift; path = ../../../../../SearchView.swift; sourceTree = "<group>"; };
+		29F297A125BA695A00EF3936 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A7012DB125B7E30400DEDC24 /* MovieKuno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieKuno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieKunoApp.swift; sourceTree = "<group>"; };
 		A7012DB625B7E30400DEDC24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,13 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		297333ED25B9232700BC4606 /* Home Vies */ = {
+		297333ED25B9232700BC4606 /* Home Views */ = {
 			isa = PBXGroup;
 			children = (
 				297333FD25B9280600BC4606 /* MovieCell.swift */,
 				2973340E25B941D200BC4606 /* RowContainerView.swift */,
+				297333EE25B9232E00BC4606 /* HomeView.swift */,
 			);
-			path = "Home Vies";
+			path = "Home Views";
 			sourceTree = "<group>";
 		};
 		2973340225B92A3600BC4606 /* Models */ = {
@@ -116,11 +117,10 @@
 		297F193425B83D3E0046416D /* Tab Pages */ = {
 			isa = PBXGroup;
 			children = (
-				297333ED25B9232700BC4606 /* Home Vies */,
-				297333EE25B9232E00BC4606 /* HomeView.swift */,
+				297333ED25B9232700BC4606 /* Home Views */,
 				297333E525B9201400BC4606 /* TabbarView.swift */,
-				297F193D25B83EA40046416D /* SearchView.swift */,
 				297333E025B91AF700BC4606 /* SettingsView.swift */,
+				29F297A125BA695A00EF3936 /* SearchView.swift */,
 			);
 			path = "Tab Pages";
 			sourceTree = "<group>";
@@ -336,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F297A225BA695A00EF3936 /* SearchView.swift in Sources */,
 				297333E125B91AF700BC4606 /* SettingsView.swift in Sources */,
 				2973340425B92A4100BC4606 /* MovieModel.swift in Sources */,
 				297333FE25B9280600BC4606 /* MovieCell.swift in Sources */,
@@ -345,7 +346,6 @@
 				2973342125B96F9900BC4606 /* HomeEnums.swift in Sources */,
 				A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */,
 				297333F625B924C600BC4606 /* HomeView.swift in Sources */,
-				297F193E25B83EA40046416D /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

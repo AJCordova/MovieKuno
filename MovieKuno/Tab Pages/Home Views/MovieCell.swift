@@ -22,6 +22,7 @@ struct MovieCell: View {
                 .bold()
                 .foregroundColor(Color("text-color-main"))
                 .fixedSize(horizontal: false, vertical: true)
+                .frame(minHeight: 35)
             Text(movie.releaseDate)
                 .font(.system(size: 14))
                 .foregroundColor(Color("text-color-secondary")).padding(0.5)
@@ -52,11 +53,5 @@ struct RatingView: View {
                 .font(.system(size: 12))
                 .foregroundColor(Color("text-color-secondary"))
         }
-    }
-}
-
-struct MovieCell_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieCell().frame(width: 180, height: 312, alignment: .center)
     }
 }
