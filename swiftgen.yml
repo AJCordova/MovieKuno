@@ -3,10 +3,10 @@ strings:
   filter: .*\.strings$
   outputs:
     - templateName: structured-swift5
-      output: MovieKuno/SwiftGen/Strings.swift
+      output: MovieKuno/Resources/SwiftGen/Strings.swift
 xcassets:
   inputs:
     - MovieKuno/Resources/Assets.xcassets
   outputs:
     - templateName: swift5
-      output: MovieKuno/SwiftGen/Assets.swift
+      output: MovieKuno/Resources/SwiftGen/Assets.swift

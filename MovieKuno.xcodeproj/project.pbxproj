@@ -102,9 +102,12 @@
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
-		29F2989025BA9C4F00EF3936 /* Resources */ = {
+		29F2993225BAA0EE00EF3936 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A7012DB825B7E30400DEDC24 /* Assets.xcassets */,
+				29F297EB25BA774E00EF3936 /* Localizable.strings */,
+				29F297B925BA748700EF3936 /* SwiftGen */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -159,11 +162,8 @@
 			children = (
 				A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */,
 				A7012DB625B7E30400DEDC24 /* ContentView.swift */,
-				A7012DB825B7E30400DEDC24 /* Assets.xcassets */,
-				29F2989025BA9C4F00EF3936 /* Resources */,
+				29F2993225BAA0EE00EF3936 /* Resources */,
 				A7012DC225B7E30400DEDC24 /* Info.plist */,
-				29F297EB25BA774E00EF3936 /* Localizable.strings */,
-				29F297B925BA748700EF3936 /* SwiftGen */,
 				A7012DBA25B7E30400DEDC24 /* Preview Content */,
 			);
 			path = MovieKuno;
