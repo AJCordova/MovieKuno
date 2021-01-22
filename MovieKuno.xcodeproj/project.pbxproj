@@ -19,8 +19,6 @@
 		A7012DB725B7E30400DEDC24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DB625B7E30400DEDC24 /* ContentView.swift */; };
 		A7012DB925B7E30400DEDC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7012DB825B7E30400DEDC24 /* Assets.xcassets */; };
 		A7012DBC25B7E30400DEDC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7012DBB25B7E30400DEDC24 /* Preview Assets.xcassets */; };
-		A7012DBE25B7E30400DEDC24 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DBD25B7E30400DEDC24 /* Persistence.swift */; };
-		A7012DC125B7E30400DEDC24 /* MovieKuno.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7012DBF25B7E30400DEDC24 /* MovieKuno.xcdatamodeld */; };
 		A7012DCC25B7E30500DEDC24 /* MovieKunoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DCB25B7E30500DEDC24 /* MovieKunoTests.swift */; };
 		A7012DD725B7E30500DEDC24 /* MovieKunoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DD625B7E30500DEDC24 /* MovieKunoUITests.swift */; };
 /* End PBXBuildFile section */
@@ -56,8 +54,6 @@
 		A7012DB625B7E30400DEDC24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7012DB825B7E30400DEDC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7012DBB25B7E30400DEDC24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A7012DBD25B7E30400DEDC24 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		A7012DC025B7E30400DEDC24 /* MovieKuno.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieKuno.xcdatamodel; sourceTree = "<group>"; };
 		A7012DC225B7E30400DEDC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7012DC725B7E30500DEDC24 /* MovieKunoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieKunoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7012DCB25B7E30500DEDC24 /* MovieKunoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieKunoTests.swift; sourceTree = "<group>"; };
@@ -155,12 +151,10 @@
 				A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */,
 				A7012DB625B7E30400DEDC24 /* ContentView.swift */,
 				A7012DB825B7E30400DEDC24 /* Assets.xcassets */,
-				A7012DBD25B7E30400DEDC24 /* Persistence.swift */,
 				2973341F25B96F4D00BC4606 /* Enums */,
 				2973340225B92A3600BC4606 /* Models */,
 				297F193425B83D3E0046416D /* Tab Pages */,
 				A7012DC225B7E30400DEDC24 /* Info.plist */,
-				A7012DBF25B7E30400DEDC24 /* MovieKuno.xcdatamodeld */,
 				A7012DBA25B7E30400DEDC24 /* Preview Content */,
 			);
 			path = MovieKuno;
@@ -343,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				297333E125B91AF700BC4606 /* SettingsView.swift in Sources */,
-				A7012DBE25B7E30400DEDC24 /* Persistence.swift in Sources */,
 				2973340425B92A4100BC4606 /* MovieModel.swift in Sources */,
 				297333FE25B9280600BC4606 /* MovieCell.swift in Sources */,
 				297333E625B9201400BC4606 /* TabbarView.swift in Sources */,
@@ -353,7 +346,6 @@
 				A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */,
 				297333F625B924C600BC4606 /* HomeView.swift in Sources */,
 				297F193E25B83EA40046416D /* SearchView.swift in Sources */,
-				A7012DC125B7E30400DEDC24 /* MovieKuno.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieKuno/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MovieKuno/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -533,6 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieKuno/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MovieKuno/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -667,19 +661,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A7012DBF25B7E30400DEDC24 /* MovieKuno.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A7012DC025B7E30400DEDC24 /* MovieKuno.xcdatamodel */,
-			);
-			currentVersion = A7012DC025B7E30400DEDC24 /* MovieKuno.xcdatamodel */;
-			path = MovieKuno.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A7012DA925B7E30400DEDC24 /* Project object */;
 }
