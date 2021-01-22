@@ -1,0 +1,12 @@
+strings:
+  inputs: MovieKuno/SwiftGen/en.lproj
+  filter: .*\.strings$
+  outputs:
+    - templateName: structured-swift5
+      output: MovieKuno/SwiftGen/Strings.swift
+xcassets:
+  inputs:
+    - MovieKuno/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: MovieKuno/SwiftGen/Assets.swift
