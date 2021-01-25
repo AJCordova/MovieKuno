@@ -14,11 +14,9 @@ struct RowContainerView: View {
     
     var body: some View {
         ZStack {
-            Color(Asset.background.color)
-                .ignoresSafeArea()
             VStack(alignment: .leading) {
                 RowHeaderView(rowTitle: rowTitle)
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     MovieStackView(movies: movies)
                 }
             }
