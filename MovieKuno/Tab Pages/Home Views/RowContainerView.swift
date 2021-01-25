@@ -17,16 +17,19 @@ struct RowContainerView: View {
             Color(Asset.background.color)
                 .ignoresSafeArea()
             VStack(alignment: .leading) {
-                setupRowHeader()
-                ScrollView(.horizontal) {
-                    setupMoviesStack()
+                RowHeaderView(rowTitle: rowTitle)
+                ScrollView {
+                    MovieStackView(movies: movies)
                 }
             }
         }
     }
-    
-    fileprivate func setupRowHeader() -> some View {
-        return HStack {
+}
+
+struct RowHeaderView: View {
+    var rowTitle: String
+    var body: some View {
+        HStack {
             Text(rowTitle)
                 .font(.system(size: 20))
                 .bold()
@@ -34,19 +37,22 @@ struct RowContainerView: View {
             Text(L10n.seeAll)
                 .foregroundColor(.blue)
             
-        }.padding(
-            EdgeInsets(top: 25, leading: 10, bottom: 0, trailing: 10))
+        }
+        .padding(EdgeInsets(top: 25, leading: 10, bottom: 0, trailing: 10))
     }
-    
-    fileprivate func setupMoviesStack() -> some View {
-        return HStack(spacing: 10) {
+}
+
+struct MovieStackView: View {
+    var movies: Movies
+    var body: some View {
+        HStack(spacing: 10) {
             ForEach( self.movies, id: \.self) { movie in
                 MovieCell(movie: movie)
                     .frame(width: 180, height: 330)
                     .background(Color(Asset.cardBackground.color))
                     .cornerRadius(20)
             }
-        }.padding(
-            EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+        }
+        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
     }
 }

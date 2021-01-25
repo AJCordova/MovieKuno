@@ -27,13 +27,13 @@ struct MovieCell: View {
                 .font(.system(size: 14))
                 .foregroundColor(Color(Asset.textColorSecondary.color)).padding(0.5)
             
-           HStack {
-            Text("")
-                .font(.system(size: 12))
-                .foregroundColor(Color(Asset.textColorSecondary.color))
-                .fixedSize(horizontal: false, vertical: true)
-                Spacer()
-            RatingView(ratings: movie.voteAverage)
+            HStack {
+                Text("")
+                    .font(.system(size: 12))
+                    .foregroundColor(Color(Asset.textColorSecondary.color))
+                    .fixedSize(horizontal: false, vertical: true)
+                    Spacer()
+                RatingView(ratings: movie.voteAverage)
            }.padding(5)
         }
     }
