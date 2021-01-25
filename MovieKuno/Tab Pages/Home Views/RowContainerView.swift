@@ -18,7 +18,7 @@ struct RowContainerView: View {
                 .ignoresSafeArea()
             VStack(alignment: .leading) {
                 RowHeaderView(rowTitle: rowTitle)
-                ScrollView {
+                ScrollView(.horizontal) {
                     MovieStackView(movies: movies)
                 }
             }

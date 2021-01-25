@@ -29,7 +29,7 @@ struct HomeView: View {
     ]
     var body: some View {
         VStack {
-            ScrollView(.vertical) {
+            ScrollView {
                 ForEach(HomeMenuSection.allCases, id: \.self) { menu in
                     containedView(menu: menu)
                 }
