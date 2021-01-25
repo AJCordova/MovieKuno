@@ -9,13 +9,13 @@ import Foundation
 import SwiftUI
 
 struct RowContainerView: View {
-    var rowTitle: String
+    var title: String
     var movies: Movies
     
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
-                RowHeaderView(rowTitle: rowTitle)
+                RowHeaderView(title: title)
                 ScrollView(.horizontal, showsIndicators: false) {
                     MovieStackView(movies: movies)
                 }
@@ -25,10 +25,10 @@ struct RowContainerView: View {
 }
 
 struct RowHeaderView: View {
-    var rowTitle: String
+    var title: String
     var body: some View {
         HStack {
-            Text(rowTitle)
+            Text(title)
                 .font(.system(size: 20))
                 .bold()
             Spacer()
