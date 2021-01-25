@@ -15,8 +15,7 @@ struct HomeView: View {
                 ForEach(HomeMenu.allCases, id: \.self) { menu in
                     RowContainerView(rowTitle: menu.menuLabel(), menu: menu)
                 }
-            }
-            .background(Color("background"))
+            }.background(Color(Asset.background.color))
         }
     }
     

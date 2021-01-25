@@ -12,25 +12,25 @@ struct MovieCell: View {
     var movie: Movie!
     var body: some View {
         VStack {
-            Image("movie-placeholder")
+            Image(Asset.moviePlaceholder.name)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 130, height: 200)
                 .cornerRadius(20)
-            Text(movie.title).foregroundColor(Color("text-color-main"))
+            Text(movie.title)
                 .font(.system(size: 17))
                 .bold()
-                .foregroundColor(Color("text-color-main"))
+                .foregroundColor(Color(Asset.textColorMain.color))
                 .fixedSize(horizontal: false, vertical: true)
                 .frame(minHeight: 35)
             Text(movie.releaseDate)
                 .font(.system(size: 14))
-                .foregroundColor(Color("text-color-secondary")).padding(0.5)
+                .foregroundColor(Color(Asset.textColorSecondary.color)).padding(0.5)
             
            HStack {
             Text("")
                 .font(.system(size: 12))
-                .foregroundColor(Color("text-color-secondary"))
+                .foregroundColor(Color(Asset.textColorSecondary.color))
                 .fixedSize(horizontal: false, vertical: true)
                 Spacer()
             RatingView(ratings: movie.voteAverage)
@@ -43,15 +43,15 @@ struct RatingView: View {
     var ratings: String
     var body: some View {
         HStack {
-            Image(systemName: "star.fill")
+            Image(systemName: L10n.starFill)
                 .resizable()
                 .renderingMode(.template)
-                .foregroundColor(Color("text-color-secondary"))
+                .foregroundColor(Color(Asset.textColorSecondary.color))
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 12, height: 12)
             Text(ratings)
                 .font(.system(size: 12))
-                .foregroundColor(Color("text-color-secondary"))
+                .foregroundColor(Color(Asset.textColorSecondary.color))
         }
     }
 }

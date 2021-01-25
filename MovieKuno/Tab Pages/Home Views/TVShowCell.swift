@@ -12,25 +12,25 @@ struct TVShowCell: View {
     var tvShow: TVShowModel
     var body: some View {
         VStack {
-            Image("movie-placeholder")
+            Image(Asset.moviePlaceholder.name)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 130, height: 200)
                 .cornerRadius(20)
-            Text(tvShow.name).foregroundColor(Color("text-color-main"))
+            Text(tvShow.name).foregroundColor(Color(Asset.textColorMain.color))
                 .font(.system(size: 17))
                 .bold()
-                .foregroundColor(Color("text-color-main"))
+                .foregroundColor(Color(Asset.textColorMain.color))
                 .fixedSize(horizontal: false, vertical: true)
                 .frame(minHeight: 35)
-            Text("\(tvShow.numberOfSeasons) Season(s)")
+            Text("\(tvShow.numberOfSeasons) \(L10n.season)")
                 .font(.system(size: 14))
-                .foregroundColor(Color("text-color-secondary")).padding(0.5)
+                .foregroundColor(Color(Asset.textColorSecondary.color)).padding(0.5)
             
            HStack {
             Text(tvShow.firstAirDate)
                 .font(.system(size: 12))
-                .foregroundColor(Color("text-color-secondary"))
+                .foregroundColor(Color(Asset.textColorSecondary.color))
                 .fixedSize(horizontal: false, vertical: true)
                 Spacer()
             RatingView(ratings: "\(tvShow.voteAverage)")

@@ -11,15 +11,21 @@ import SwiftUI
 struct RowContainerView: View {
     var rowTitle: String
     var menu: HomeMenu
-    
     var body: some View {
         ZStack {
-            Color("background")
+            Color(Asset.background.color)
                 .ignoresSafeArea()
             VStack(alignment: .leading) {
                 setupRowHeader()
                 ScrollView(.horizontal) {
-                    prepareViewForRow()
+                    switch menu {
+                    case .latestMovie, .popularMovie:
+                        setupMoviesStack()
+                    case .latestTVShow, .popularTVShow:
+                        setupTVShowsStack()
+                    case .popularPeople:
+                        setupMoviesStack()
+                    }
                 }
             }
         }
@@ -31,7 +37,7 @@ struct RowContainerView: View {
                 .font(.system(size: 20))
                 .bold()
             Spacer()
-            Text("See all >")
+            Text(L10n.seeAll)
                 .foregroundColor(.blue)
             
         }.padding(
@@ -43,7 +49,7 @@ struct RowContainerView: View {
             ForEach(prepareMovieData(), id: \.self) { movie in
                 MovieCell(movie: movie)
                     .frame(width: 180, height: 330)
-                    .background(Color("card-background"))
+                    .background(Color(Asset.cardBackground.color))
                     .cornerRadius(20)
             }
         }.padding(
@@ -55,26 +61,15 @@ struct RowContainerView: View {
             ForEach(prepareTVShowsData(), id: \.self) { tvShow in
                 TVShowCell(tvShow: tvShow)
                     .frame(width: 180, height: 330)
-                    .background(Color("card-background"))
+                    .background(Color(Asset.cardBackground.color))
                     .cornerRadius(20)
             }
         }.padding(
             EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
     }
     
-    fileprivate func prepareViewForRow() -> some View {
-        switch menu {
-        case .latestMovie, .popularMovie:
-            return setupMoviesStack()
-        case .latestTVShow, .popularTVShow:
-            return setupTVShowsStack()
-        case .popularPeople:
-            return setupMoviesStack()
-        }
-    }
-    
     fileprivate func prepareTVShowsData() -> TVShows {
-        let movies: TVShows = [
+        let tvShows: TVShows = [
             TVShowModel(id: 1,
                         name: "How I Met Your Mother",
                         numberOfSeasons: 7,
@@ -91,7 +86,7 @@ struct RowContainerView: View {
                         firstAirDate: "2001",
                         voteAverage: 3)
         ]
-        return movies
+        return tvShows
     }
     
     fileprivate func prepareMovieData() -> Movies {
