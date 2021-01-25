@@ -6,3 +6,10 @@
   
 */
 "see_all" = "See all >";
+"latest_movie" = "Latest Movie";
+"latest_tv_show" = "Latest TV Show";
+"popular_movie" = "Popular Movie";
+"popular_tv_show" = "Popular TV Show";
+"popular_people" = "Popular People";
+"star_fill" = "star.fill";
+"star" = "star";

@@ -34,7 +34,7 @@ struct HomeView: View {
                     containedView(menu: menu)
                 }
             }
-            .background(Color("background"))
+            .background(Color(Asset.background.color))
         }
     }
     
@@ -44,11 +44,11 @@ struct HomeView: View {
             let view = RowContainerView(rowTitle: menu.menuLabel(), movies: movies)
             return view
         case .latestTVShow, .popularTVShow:
-            // TODO: replace specific view
+            // TODO: replace with correct view
             let view = RowContainerView(rowTitle: menu.menuLabel(), movies: movies)
             return view
         case .popularPeople:
-            // TODO: replace specific view
+            // TODO: replace with correct view
             let view = RowContainerView(rowTitle: menu.menuLabel(), movies: movies)
             return view
         }

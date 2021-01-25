@@ -17,15 +17,15 @@ enum HomeMenu: CaseIterable {
     func menuLabel() -> String {
         switch self {
         case .latestMovie:
-            return "Latest Movie"
+            return L10n.latestMovie
         case .latestTVShow:
-            return "Latest TV Show"
+            return L10n.latestTvShow
         case .popularMovie:
-            return "Popular Movie"
+            return L10n.popularMovie
         case .popularTVShow:
-            return "Popular TV Show"
+            return L10n.popularTvShow
         case .popularPeople:
-            return "Popular People"
+            return L10n.popularPeople
         }
     }
 }

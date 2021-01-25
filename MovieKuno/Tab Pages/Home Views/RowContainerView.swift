@@ -14,7 +14,7 @@ struct RowContainerView: View {
     
     var body: some View {
         ZStack {
-            Color("background")
+            Color(Asset.background.color)
                 .ignoresSafeArea()
             VStack(alignment: .leading) {
                 setupRowHeader()
@@ -31,7 +31,7 @@ struct RowContainerView: View {
                 .font(.system(size: 20))
                 .bold()
             Spacer()
-            Text("See all >")
+            Text(L10n.seeAll)
                 .foregroundColor(.blue)
             
         }.padding(
@@ -43,7 +43,7 @@ struct RowContainerView: View {
             ForEach( self.movies, id: \.self) { movie in
                 MovieCell(movie: movie)
                     .frame(width: 180, height: 330)
-                    .background(Color("card-background"))
+                    .background(Color(Asset.cardBackground.color))
                     .cornerRadius(20)
             }
         }.padding(
