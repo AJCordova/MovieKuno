@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct HomeView: View {
-    @State private var movies: Movies = tempMovies
+    @State private var movies: Movies = Movie.arrayTemplate
     var body: some View {
         VStack {
             ScrollView {

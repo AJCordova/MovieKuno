@@ -17,23 +17,14 @@ struct Movie: Codable, Hashable {
     let genreIds: [Int]
 }
 
-typealias Movies = [Movie]
+extension Movie {
+    static let template = Movie(id: 1,
+                                title: "Harry Potter and the Philosopher Stone",
+                                posterURL: "",
+                                voteAverage: "4.5",
+                                releaseDate: "21 November 200",
+                                genreIds: [1, 2, 3])
+    static let arrayTemplate = Movies(repeating: Movie.template, count: 5)
+}
 
-var tempMovies: Movies = [
-    Movie(id: 1,
-          title: "Harry Potter and the Philosopher Stone",
-          posterURL: "",
-          voteAverage: "4.5",
-          releaseDate: "21 November 200",
-          genreIds: [1, 2, 3]),
-    Movie(id: 2, title: "Despicable Me 3",
-          posterURL: "",
-          voteAverage: "6.3",
-          releaseDate: "14 June 2017",
-          genreIds: [1, 2, 3]),
-    Movie(id: 3, title: "Monsters University",
-          posterURL: "",
-          voteAverage: "4.5",
-          releaseDate: "26 June 2013",
-          genreIds: [1, 2, 3])
-]
+typealias Movies = [Movie]
