@@ -18,10 +18,6 @@ class MovieKunoUITests: XCTestCase {
 
     override func tearDown() {
         super.tearDown()
-        let screenshot = XCUIScreen.main.screenshot()
-        let fullScreenshotAttachment = XCTAttachment(screenshot: screenshot)
-        fullScreenshotAttachment.lifetime = .deleteOnSuccess
-        add(fullScreenshotAttachment)
         app.terminate()
     }
     
@@ -30,6 +26,7 @@ class MovieKunoUITests: XCTestCase {
         tabBar.buttons["Home"].tap()
         let latestMovie = app.staticTexts["Latest Movie"]
         XCTAssertTrue(latestMovie.exists)
+        takeScreenshot(description: "Latest-Movie")
     }
     
     func testAccessSearchView() {
@@ -37,6 +34,7 @@ class MovieKunoUITests: XCTestCase {
         tabBar.buttons["Search"].tap()
         let searchView = app.staticTexts["Search View"]
         XCTAssertTrue(searchView.exists)
+        takeScreenshot(description: "Search-View")
     }
     
     func testAccessSettingsView() {
@@ -44,5 +42,6 @@ class MovieKunoUITests: XCTestCase {
         tabBar.buttons["Settings"].tap()
         let settingsView = app.staticTexts["Settings View"]
         XCTAssertTrue(settingsView.exists)
+        takeScreenshot(description: "Settings-View")
     }
 }
