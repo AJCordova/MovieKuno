@@ -11,11 +11,25 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            ScrollView(.vertical) {
-                ForEach(HomeMenu.allCases, id: \.self) { menu in
-                    RowContainerView(rowTitle: menu.menuLabel(), menu: menu)
+            ScrollView {
+                ForEach(HomeMenuSection.allCases, id: \.self) { menu in
+                    containedView(menu: menu)
                 }
-            }.background(Color(Asset.background.color))
+            }
+            .background(Color(Asset.background.color))
+        }
+    }
+    
+    fileprivate func containedView(menu: HomeMenuSection) -> some View {
+        switch menu {
+        case .latestMovie, .popularMovie:
+            return RowContainerView(menu: menu)
+        case .latestTVShow, .popularTVShow:
+            // TODO: replace with correct view
+            return RowContainerView(menu: menu)
+        case .popularPeople:
+            // TODO: replace with correct view
+            return RowContainerView(menu: menu)
         }
     }
     

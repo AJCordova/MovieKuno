@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HomeMenu: CaseIterable {
+enum HomeMenuSection: CaseIterable {
     case latestMovie
     case popularMovie
     case latestTVShow

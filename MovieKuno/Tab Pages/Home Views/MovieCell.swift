@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct MovieCell: View {
-    var movie: Movie!
+    var movie: Movie
     var body: some View {
         VStack {
             Image(Asset.moviePlaceholder.name)
@@ -18,22 +18,17 @@ struct MovieCell: View {
                 .frame(width: 130, height: 200)
                 .cornerRadius(20)
             Text(movie.title)
-                .font(.system(size: 17))
-                .bold()
-                .foregroundColor(Color(Asset.textColorMain.color))
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(minHeight: 35)
+                .modifier(Title(minHeight: 35, fontSize: 17))
             Text(movie.releaseDate)
                 .font(.system(size: 14))
                 .foregroundColor(Color(Asset.textColorSecondary.color)).padding(0.5)
-            
-           HStack {
-            Text("")
-                .font(.system(size: 12))
-                .foregroundColor(Color(Asset.textColorSecondary.color))
-                .fixedSize(horizontal: false, vertical: true)
-                Spacer()
-            RatingView(ratings: movie.voteAverage)
+            HStack {
+                Text("")
+                    .font(.system(size: 12))
+                    .foregroundColor(Color(Asset.textColorSecondary.color))
+                    .fixedSize(horizontal: false, vertical: true)
+                    Spacer()
+                RatingView(ratings: movie.voteAverage)
            }.padding(5)
         }
     }
