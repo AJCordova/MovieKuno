@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291D83D725C0FD1E0000FB29 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D83D625C0FD1E0000FB29 /* ViewUtils.swift */; };
+		298F959625BFD834006B6949 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F959525BFD834006B6949 /* PeopleModel.swift */; };
+		298F959B25BFD8C5006B6949 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F959A25BFD8C5006B6949 /* PeopleCell.swift */; };
 		29B8208225BE7B7100200ACB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207725BE7B7100200ACB /* SettingsView.swift */; };
 		29B8208325BE7B7100200ACB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207825BE7B7100200ACB /* SearchView.swift */; };
 		29B8208425BE7B7100200ACB /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207925BE7B7100200ACB /* TabbarView.swift */; };
@@ -52,6 +55,9 @@
 
 /* Begin PBXFileReference section */
 		25B72D590B2DBAEF5EB689D1 /* Pods-MovieKunoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieKunoTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieKunoTests/Pods-MovieKunoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		291D83D625C0FD1E0000FB29 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		298F959525BFD834006B6949 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		298F959A25BFD8C5006B6949 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		29B8207725BE7B7100200ACB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		29B8207825BE7B7100200ACB /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		29B8207925BE7B7100200ACB /* TabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				29F2998125BAB0F300EF3936 /* TVShowCell.swift */,
+				298F959A25BFD8C5006B6949 /* PeopleCell.swift */,
 				29B8207B25BE7B7100200ACB /* RowContainerView.swift */,
 				29B8207C25BE7B7100200ACB /* MovieCell.swift */,
 				29B8207D25BE7B7100200ACB /* HomeView.swift */,
@@ -151,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				29B8208125BE7B7100200ACB /* MovieModel.swift */,
+				298F959525BFD834006B6949 /* PeopleModel.swift */,
 				29F2997425BAA94900EF3936 /* TVShowModel.swift */,
 				29F2997C25BAAE5100EF3936 /* GenreModel.swift */,
 			);
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				29B821D925BEAC2700200ACB /* Text.swift */,
+				291D83D625C0FD1E0000FB29 /* ViewUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -517,12 +526,15 @@
 				29B8208225BE7B7100200ACB /* SettingsView.swift in Sources */,
 				29B8208425BE7B7100200ACB /* TabbarView.swift in Sources */,
 				29B8208625BE7B7100200ACB /* MovieCell.swift in Sources */,
+				298F959625BFD834006B6949 /* PeopleModel.swift in Sources */,
 				29B8208725BE7B7100200ACB /* HomeView.swift in Sources */,
+				291D83D725C0FD1E0000FB29 /* ViewUtils.swift in Sources */,
 				A7012DB725B7E30400DEDC24 /* ContentView.swift in Sources */,
 				29F2997D25BAAE5100EF3936 /* GenreModel.swift in Sources */,
 				A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */,
 				29B821DA25BEAC2700200ACB /* Text.swift in Sources */,
 				29F2985225BA7A0E00EF3936 /* Strings.swift in Sources */,
+				298F959B25BFD8C5006B6949 /* PeopleCell.swift in Sources */,
 				29B8208325BE7B7100200ACB /* SearchView.swift in Sources */,
 				29F2985125BA7A0E00EF3936 /* Assets.swift in Sources */,
 				29B8208525BE7B7100200ACB /* RowContainerView.swift in Sources */,
