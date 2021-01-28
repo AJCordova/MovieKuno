@@ -18,22 +18,14 @@ struct TVShowModel: Codable, Hashable {
 
 typealias TVShows = [TVShowModel]
 
-let tempTvShows: TVShows = [
-    TVShowModel(id: 1,
-                name: "How I Met Your Mother",
-                numberOfSeasons: 7,
-                firstAirDate: "2001",
-                voteAverage: 2),
-    TVShowModel(id: 2,
-                name: "F.R.I.E.N.D.S",
-                numberOfSeasons: 10,
-                firstAirDate: "2001",
-                voteAverage: 3),
-    TVShowModel(id: 2,
-                name: "Big Bang Theory",
-                numberOfSeasons: 10,
-                firstAirDate: "2001",
-                voteAverage: 3)
-]
+
+extension TVShowModel {
+    static let tvShow = TVShowModel(id: 1,
+                                   name: "How I Met Your Mother",
+                                   numberOfSeasons: 7,
+                                   firstAirDate: "2001",
+                                   voteAverage: 2)
+    static let arrayTemplate = TVShows(repeating: TVShowModel.tvShow, count: 5)
+}
 
 

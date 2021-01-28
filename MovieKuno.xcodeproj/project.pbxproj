@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		291D83D725C0FD1E0000FB29 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D83D625C0FD1E0000FB29 /* ViewUtils.swift */; };
+		2977F5F325C29B77003FC0A1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977F5C125C299F8003FC0A1 /* SnapshotHelper.swift */; };
 		298F959625BFD834006B6949 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F959525BFD834006B6949 /* PeopleModel.swift */; };
 		298F959B25BFD8C5006B6949 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F959A25BFD8C5006B6949 /* PeopleCell.swift */; };
 		29B8208225BE7B7100200ACB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207725BE7B7100200ACB /* SettingsView.swift */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		25B72D590B2DBAEF5EB689D1 /* Pods-MovieKunoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieKunoTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieKunoTests/Pods-MovieKunoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		291D83D625C0FD1E0000FB29 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		2977F5C125C299F8003FC0A1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = MovieKunoUITests/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		298F959525BFD834006B6949 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
 		298F959A25BFD8C5006B6949 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		29B8207725BE7B7100200ACB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		A7012DD525B7E30500DEDC24 /* MovieKunoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2977F5C125C299F8003FC0A1 /* SnapshotHelper.swift */,
 				A7012DD625B7E30500DEDC24 /* MovieKunoUITests.swift */,
 				A7012DD825B7E30500DEDC24 /* Info.plist */,
 			);
@@ -554,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7012DD725B7E30500DEDC24 /* MovieKunoUITests.swift in Sources */,
+				2977F5F325C29B77003FC0A1 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

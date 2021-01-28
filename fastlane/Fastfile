@@ -11,7 +11,7 @@
 
 # This is the minimum version number required.
 # Update this, if you use features of a newer version
-fastlane_version "1.92.0"
+fastlane_version "2.172"
 
 default_platform :ios
 
@@ -26,7 +26,7 @@ platform :ios do
   lane :test do
     scan
   end
-
+end
 
 # More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
 # All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md

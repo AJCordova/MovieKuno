@@ -46,7 +46,7 @@ struct RowHeaderView: View {
 }
 
 struct MovieStackView: View {
-    @State private var movies: Movies = tempMovies
+    @State private var movies: Movies = Movie.arrayTemplate
     var body: some View {
         HStack(spacing: 10) {
             ForEach( self.movies, id: \.self) { movie in
@@ -59,7 +59,7 @@ struct MovieStackView: View {
 }
 
 struct TVShowStackView: View {
-    @State private var tvShows: TVShows = tempTvShows
+    @State private var tvShows: TVShows = TVShowModel.arrayTemplate
     var body: some View {
         HStack(spacing: 10) {
             ForEach( self.tvShows, id: \.self) { tvShow in
