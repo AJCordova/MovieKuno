@@ -21,7 +21,7 @@ scheme("MovieKunoUITests")
 # Remove the '#' if using dark mode
 output_directory("MovieKunoUITests/screenshots/dark_mode/")
 # Remove the '#' if using light mode
-output_directory("MovieKunoUITests/screenshots/light_mode/")
+# output_directory("MovieKunoUITests/screenshots/light_mode/")
 
 # remove the '#' to clear all previously generated screenshots before creating new ones
 clear_previous_screenshots(true)
