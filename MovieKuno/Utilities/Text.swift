@@ -9,13 +9,11 @@ import Foundation
 import SwiftUI
 
 struct Title: ViewModifier {
-    var minHeight: CGFloat
-    var fontSize: CGFloat
     func body(content: Content) -> some View {
         content
-            .font(.system(size: fontSize, weight: .bold))
+            .font(.system(size: 17, weight: .bold))
             .foregroundColor(Color(Asset.textColorMain.color))
             .fixedSize(horizontal: false, vertical: true)
-            .frame(minHeight: minHeight)
+            .frame(minHeight: 35)
     }
 }

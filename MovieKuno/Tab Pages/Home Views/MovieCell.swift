@@ -18,7 +18,7 @@ struct MovieCell: View {
                 .frame(width: 130, height: 200)
                 .cornerRadius(20)
             Text(movie.title)
-                .modifier(Title(minHeight: 35, fontSize: 17))
+                .modifier(Title())
             Text(movie.releaseDate)
                 .font(.system(size: 14))
                 .foregroundColor(Color(Asset.textColorSecondary.color)).padding(0.5)
