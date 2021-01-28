@@ -10,9 +10,9 @@ import XCTest
 class MovieKunoUITests: XCTestCase {
     
     let app = XCUIApplication()
-
     override func setUp() {
         continueAfterFailure = false
+        setupSnapshot(app)
         app.launch()
     }
 
@@ -26,7 +26,7 @@ class MovieKunoUITests: XCTestCase {
         tabBar.buttons["Home"].tap()
         let latestMovie = app.staticTexts["Latest Movie"]
         XCTAssertTrue(latestMovie.exists)
-        takeScreenshot(description: "Latest-Movie")
+        snapshot("Latest-Movie")
     }
     
     func testAccessSearchView() {
@@ -34,7 +34,7 @@ class MovieKunoUITests: XCTestCase {
         tabBar.buttons["Search"].tap()
         let searchView = app.staticTexts["Search View"]
         XCTAssertTrue(searchView.exists)
-        takeScreenshot(description: "Search-View")
+        snapshot("Search-View")
     }
     
     func testAccessSettingsView() {
@@ -42,6 +42,6 @@ class MovieKunoUITests: XCTestCase {
         tabBar.buttons["Settings"].tap()
         let settingsView = app.staticTexts["Settings View"]
         XCTAssertTrue(settingsView.exists)
-        takeScreenshot(description: "Settings-View")
+        snapshot("Settings-View")
     }
 }
