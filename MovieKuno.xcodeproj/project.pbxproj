@@ -12,7 +12,6 @@
 		29B8208225BE7B7100200ACB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207725BE7B7100200ACB /* SettingsView.swift */; };
 		29B8208325BE7B7100200ACB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207825BE7B7100200ACB /* SearchView.swift */; };
 		29B8208425BE7B7100200ACB /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207925BE7B7100200ACB /* TabbarView.swift */; };
-		29B8208525BE7B7100200ACB /* RowContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207B25BE7B7100200ACB /* RowContainerView.swift */; };
 		29B8208625BE7B7100200ACB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207C25BE7B7100200ACB /* MovieCell.swift */; };
 		29B8208725BE7B7100200ACB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207D25BE7B7100200ACB /* HomeView.swift */; };
 		29B8208825BE7B7100200ACB /* HomeEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207F25BE7B7100200ACB /* HomeEnums.swift */; };
@@ -56,7 +55,6 @@
 		29B8207725BE7B7100200ACB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		29B8207825BE7B7100200ACB /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		29B8207925BE7B7100200ACB /* TabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
-		29B8207B25BE7B7100200ACB /* RowContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowContainerView.swift; sourceTree = "<group>"; };
 		29B8207C25BE7B7100200ACB /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		29B8207D25BE7B7100200ACB /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		29B8207F25BE7B7100200ACB /* HomeEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEnums.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 		29B8207A25BE7B7100200ACB /* Home Views */ = {
 			isa = PBXGroup;
 			children = (
-				29B8207B25BE7B7100200ACB /* RowContainerView.swift */,
 				29B8207C25BE7B7100200ACB /* MovieCell.swift */,
 				29B8207D25BE7B7100200ACB /* HomeView.swift */,
 			);
@@ -520,7 +517,6 @@
 				29F2985225BA7A0E00EF3936 /* Strings.swift in Sources */,
 				29B8208325BE7B7100200ACB /* SearchView.swift in Sources */,
 				29F2985125BA7A0E00EF3936 /* Assets.swift in Sources */,
-				29B8208525BE7B7100200ACB /* RowContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
