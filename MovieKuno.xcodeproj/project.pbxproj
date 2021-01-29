@@ -28,8 +28,8 @@
 		A7012DBC25B7E30400DEDC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7012DBB25B7E30400DEDC24 /* Preview Assets.xcassets */; };
 		A7012DCC25B7E30500DEDC24 /* MovieKunoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DCB25B7E30500DEDC24 /* MovieKunoTests.swift */; };
 		A7012DD725B7E30500DEDC24 /* MovieKunoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7012DD625B7E30500DEDC24 /* MovieKunoUITests.swift */; };
-		A7A9067C25C2588E000E463A /* OnboardingPanelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9067B25C2588E000E463A /* OnboardingPanelModel.swift */; };
-		A7A9068125C25CE9000E463A /* OnboardingPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9068025C25CE9000E463A /* OnboardingPanelView.swift */; };
+		A7A9067C25C2588E000E463A /* ShowcasePanelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9067B25C2588E000E463A /* ShowcasePanelModel.swift */; };
+		A7A9068125C25CE9000E463A /* ShowcasePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9068025C25CE9000E463A /* ShowcasePanelView.swift */; };
 		A7A9068625C25F81000E463A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A9068525C25F81000E463A /* OnboardingView.swift */; };
 		BFABD45D38EF151C8318CB0E /* Pods_MovieKunoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CAEDC5F2000784FDB7BDA7 /* Pods_MovieKunoTests.framework */; };
 /* End PBXBuildFile section */
@@ -80,8 +80,8 @@
 		A7012DD225B7E30500DEDC24 /* MovieKunoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieKunoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7012DD625B7E30500DEDC24 /* MovieKunoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieKunoUITests.swift; sourceTree = "<group>"; };
 		A7012DD825B7E30500DEDC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7A9067B25C2588E000E463A /* OnboardingPanelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPanelModel.swift; sourceTree = "<group>"; };
-		A7A9068025C25CE9000E463A /* OnboardingPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPanelView.swift; sourceTree = "<group>"; };
+		A7A9067B25C2588E000E463A /* ShowcasePanelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcasePanelModel.swift; sourceTree = "<group>"; };
+		A7A9068025C25CE9000E463A /* ShowcasePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcasePanelView.swift; sourceTree = "<group>"; };
 		A7A9068525C25F81000E463A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		BEF7B559E489452B4AA91305 /* Pods-MovieKuno.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieKuno.release.xcconfig"; path = "Target Support Files/Pods-MovieKuno/Pods-MovieKuno.release.xcconfig"; sourceTree = "<group>"; };
 		CBFA8744C3BA21DDFCF3457E /* Pods_MovieKuno_MovieKunoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieKuno_MovieKunoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +231,7 @@
 		A7012DB325B7E30400DEDC24 /* MovieKuno */ = {
 			isa = PBXGroup;
 			children = (
+				A76BE67A25C3E29500730F20 /* Generics */,
 				A7012DB425B7E30400DEDC24 /* MovieKunoApp.swift */,
 				A7012DB625B7E30400DEDC24 /* ContentView.swift */,
 				29B821D825BEAC0B00200ACB /* Utilities */,
@@ -275,11 +276,26 @@
 		A76BE66F25C3DA4400730F20 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				A7A9067B25C2588E000E463A /* OnboardingPanelModel.swift */,
-				A7A9068025C25CE9000E463A /* OnboardingPanelView.swift */,
 				A7A9068525C25F81000E463A /* OnboardingView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A76BE67A25C3E29500730F20 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				A76BE67B25C3E2AD00730F20 /* Showcase */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		A76BE67B25C3E2AD00730F20 /* Showcase */ = {
+			isa = PBXGroup;
+			children = (
+				A7A9067B25C2588E000E463A /* ShowcasePanelModel.swift */,
+				A7A9068025C25CE9000E463A /* ShowcasePanelView.swift */,
+			);
+			path = Showcase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,14 +540,14 @@
 				29B8208925BE7B7100200ACB /* MovieModel.swift in Sources */,
 				29B8208825BE7B7100200ACB /* HomeEnums.swift in Sources */,
 				29B8208225BE7B7100200ACB /* SettingsView.swift in Sources */,
-				A7A9067C25C2588E000E463A /* OnboardingPanelModel.swift in Sources */,
+				A7A9067C25C2588E000E463A /* ShowcasePanelModel.swift in Sources */,
 				29B8208425BE7B7100200ACB /* TabbarView.swift in Sources */,
 				29B8208625BE7B7100200ACB /* MovieCell.swift in Sources */,
 				29B8208725BE7B7100200ACB /* HomeView.swift in Sources */,
 				A7012DB725B7E30400DEDC24 /* ContentView.swift in Sources */,
 				A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */,
 				29B821DA25BEAC2700200ACB /* Text.swift in Sources */,
-				A7A9068125C25CE9000E463A /* OnboardingPanelView.swift in Sources */,
+				A7A9068125C25CE9000E463A /* ShowcasePanelView.swift in Sources */,
 				29F2985225BA7A0E00EF3936 /* Strings.swift in Sources */,
 				29B8208325BE7B7100200ACB /* SearchView.swift in Sources */,
 				A7A9068625C25F81000E463A /* OnboardingView.swift in Sources */,
