@@ -24,22 +24,6 @@ struct RowContainerView: View {
     }
 }
 
-struct RowHeaderView: View {
-    var title: String
-    var body: some View {
-        HStack {
-            Text(title)
-                .font(.system(size: 20))
-                .bold()
-            Spacer()
-            Text(L10n.seeAll)
-                .foregroundColor(.blue)
-            
-        }
-        .padding(EdgeInsets(top: 25, leading: 10, bottom: 0, trailing: 10))
-    }
-}
-
 struct MovieStackView: View {
     var movies: Movies
     var body: some View {

@@ -12,24 +12,34 @@ struct MovieCell: View {
     var movie: Movie
     var body: some View {
         VStack {
-            Image(Asset.moviePlaceholder.name)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 130, height: 200)
-                .cornerRadius(20)
-            Text(movie.title)
-                .modifier(Title())
-            Text(movie.releaseDate)
-                .font(.system(size: 14))
-                .foregroundColor(Color(Asset.textColorSecondary.color)).padding(0.5)
-            HStack {
-                Text("")
-                    .font(.system(size: 12))
+            ZStack(alignment: .center) {
+                Image(Asset.moviePlaceholder.name)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 200)
+                    .blur(radius: 10)
+                Image(Asset.moviePlaceholder.name)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 130, height: 200)
+                    .cornerRadius(20)
+                    .padding(.top, 20)
+            }
+            VStack {
+                Text(movie.title)
+                    .modifier(Title())
+                Text(movie.releaseDate)
+                    .font(.system(size: 14))
                     .foregroundColor(Color(Asset.textColorSecondary.color))
-                    .fixedSize(horizontal: false, vertical: true)
-                    Spacer()
-                RatingView(ratings: movie.voteAverage)
-           }.padding(5)
+                HStack {
+                    Text("\u{2022}Novel \u{2022}Children's Literature \u{2022}Fantasy Fiction \u{2022}HighFantasy")
+                        .font(.system(size: 12))
+                        .foregroundColor(Color(Asset.textColorSecondary.color))
+                        .fixedSize(horizontal: false, vertical: true)
+                        Spacer()
+                    RatingView(ratings: movie.voteAverage)
+               }.padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))
+            }.frame(minHeight: 130, idealHeight: 130)
+            .background(Color(Asset.cardBackground.color))
         }
     }
 }
