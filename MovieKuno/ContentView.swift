@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var hasOnboarded = false
+    var data = OnboardingPanelModel.data
+    
     var body: some View {
-        TabbarView()
+        if !getOnboardState() {
+            OnboardingView(data: data)
+        } else {
+            TabbarView()
+        }
+    }
+    
+    private func getOnboardState() -> Bool {
+        return hasOnboarded
     }
 }
 
