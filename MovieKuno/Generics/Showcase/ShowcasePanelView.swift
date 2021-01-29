@@ -1,5 +1,5 @@
 //
-//  OnboardingPanelView.swift
+//  ShowcasePanelView.swift
 //  MovieKuno
 //
 //  Created by Amiel Jireh Cordova on 1/28/21.
@@ -9,8 +9,8 @@ import Foundation
 
 import SwiftUI
 
-struct OnboardingPanelView: View {
-    var data: OnboardingPanelModel
+struct ShowcasePanelView: View {
+    var data: ShowcasePanelModel
 
     var body: some View {
         VStack {
@@ -31,9 +31,9 @@ struct OnboardingPanelView: View {
     }
 }
 
-struct OnboardingPanelView_Previews: PreviewProvider {
-    static var data = OnboardingPanelModel.data[0]
+struct ShowcasePanelView_Previews: PreviewProvider {
+    static var data = ShowcasePanelModel.data[0]
     static var previews: some View {
-        OnboardingPanelView(data: data)
+        ShowcasePanelView(data: data)
     }
 }
