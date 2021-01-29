@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    var data: [OnboardingPanelModel]
+    var data: [ShowcasePanelModel]
 
     @State private var slideGesture: CGSize = CGSize.zero
     @State private var slideProgressIndex: Int = 0
@@ -31,7 +31,7 @@ struct OnboardingView: View {
 
                 ZStack(alignment: .center) {
                     ForEach(0..<data.count) { i in
-                        OnboardingPanelView(data: self.data[i])
+                        ShowcasePanelView(data: self.data[i])
                             .offset(x: CGFloat(i) * self.screenWidth)
                             .offset(x: self.slideGesture.width - CGFloat(self.slideProgressIndex) * self.screenWidth)
                             .animation(.spring())
@@ -125,7 +125,7 @@ struct OnboardingNavigationButton: View {
 }
 
 struct OnboardingView_Previews: PreviewProvider {
-    static var data = OnboardingPanelModel.data
+    static var data = ShowcasePanelModel.data
     static var previews: some View {
         OnboardingView(data: data)
     }

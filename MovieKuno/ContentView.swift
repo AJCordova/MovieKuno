@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var hasOnboarded = false
-    var data = OnboardingPanelModel.data
+    var data = ShowcasePanelModel.data
     
     var body: some View {
         if !getOnboardState() {
