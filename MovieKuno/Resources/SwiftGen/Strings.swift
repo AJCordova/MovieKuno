@@ -10,10 +10,18 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Done
+  internal static let doneNavigation = L10n.tr("Localizable", "done_navigation")
+  /// Explore
+  internal static let exploreNavigation = L10n.tr("Localizable", "explore_navigation")
+  /// Get Started
+  internal static let getStartedNavigation = L10n.tr("Localizable", "get_started_navigation")
   /// Latest Movie
   internal static let latestMovie = L10n.tr("Localizable", "latest_movie")
   /// Latest TV Show
   internal static let latestTvShow = L10n.tr("Localizable", "latest_tv_show")
+  /// MovieKuno
+  internal static let onboardingTitle = L10n.tr("Localizable", "onboarding_title")
   /// Popular Movie
   internal static let popularMovie = L10n.tr("Localizable", "popular_movie")
   /// Popular People
@@ -22,6 +30,8 @@ internal enum L10n {
   internal static let popularTvShow = L10n.tr("Localizable", "popular_tv_show")
   /// See all >
   internal static let seeAll = L10n.tr("Localizable", "see_all")
+  /// Panel description.
+  internal static let showcaseDescriptionPlaceholder = L10n.tr("Localizable", "showcase_description_placeholder")
   /// star
   internal static let star = L10n.tr("Localizable", "star")
   /// star.fill

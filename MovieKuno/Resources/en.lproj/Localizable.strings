@@ -13,3 +13,12 @@
 "popular_people" = "Popular People";
 "star_fill" = "star.fill";
 "star" = "star";
+
+// Showcase View
+"showcase_description_placeholder" = "Panel description.";
+
+// Onboarding View
+"onboarding_title" = "MovieKuno";
+"get_started_navigation" = "Get Started";
+"explore_navigation" = "Explore";
+"done_navigation" = "Done";
