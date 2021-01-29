@@ -23,7 +23,7 @@ struct OnboardingView: View {
                     .animation(.spring())
                     .transition(.slide)
             } else {
-                Text("MOVIEKUNO")
+                Text(L10n.onboardingTitle)
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                     .font(.system(size: 20, weight: .heavy))
                     .foregroundColor(.orange)
@@ -71,7 +71,7 @@ struct OnboardingView: View {
                     Button(action: {
                         self.showHomeView.toggle()
                     }) {
-                        Text("Get Started")
+                        Text(L10n.getStartedNavigation)
                             .font(.system(size: 15, weight: .heavy, design: .rounded))
                             .foregroundColor(.orange)
                     }
@@ -112,7 +112,7 @@ struct OnboardingNavigationButton: View {
                 self.showHomeView.toggle()
             }
         }) {
-            Text(slideProgressIndex == panelCollectionCount - 1 ? "Done" : "Explore")
+            Text(slideProgressIndex == panelCollectionCount - 1 ? L10n.doneNavigation : L10n.exploreNavigation)
                 .font(.system(size: 20, weight: .bold, design: .rounded))
                 .foregroundColor(.white)
         }

@@ -14,13 +14,10 @@ struct ShowcasePanelModel {
 }
 
 extension ShowcasePanelModel {
-    static private let subText = """
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                 """
+    static private let description = L10n.showcaseDescriptionPlaceholder
     static var data: [ShowcasePanelModel] = [
-        ShowcasePanelModel(image: "onboardingpanel", title: "WELCOME TO MOVIEKUNO", subTitle: ""),
-        ShowcasePanelModel(image: "onboardingpanel", title: "SECOND PANEL", subTitle: ""),
-        ShowcasePanelModel(image: "onboardingpanel", title: "THIRD PANEL", subTitle: "")
+        ShowcasePanelModel(image: "onboardingpanel", title: description, subTitle: ""),
+        ShowcasePanelModel(image: "onboardingpanel", title: description, subTitle: ""),
+        ShowcasePanelModel(image: "onboardingpanel", title: description, subTitle: "")
     ]
 }
