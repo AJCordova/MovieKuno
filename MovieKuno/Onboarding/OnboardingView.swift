@@ -57,6 +57,8 @@ struct OnboardingView: View {
                             })
                     }
                 }
+                
+                .accessibility(identifier: "showcaseView")
                 Spacer()
                 
                 VStack {
