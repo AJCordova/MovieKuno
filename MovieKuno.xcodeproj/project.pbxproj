@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29229AAD25C4049400705BB9 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29229AAC25C4049400705BB9 /* ViewUtils.swift */; };
+		29229AD825C4125C00705BB9 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29229AD725C4125C00705BB9 /* DetailsView.swift */; };
 		2977F58C25C27EC2003FC0A1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977F58B25C27EC2003FC0A1 /* SnapshotHelper.swift */; };
 		29B8208225BE7B7100200ACB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207725BE7B7100200ACB /* SettingsView.swift */; };
 		29B8208325BE7B7100200ACB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B8207825BE7B7100200ACB /* SearchView.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		25B72D590B2DBAEF5EB689D1 /* Pods-MovieKunoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieKunoTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieKunoTests/Pods-MovieKunoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29229AAC25C4049400705BB9 /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		29229AD725C4125C00705BB9 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		2977F58B25C27EC2003FC0A1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		29B8207725BE7B7100200ACB /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		29B8207825BE7B7100200ACB /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				29B8207725BE7B7100200ACB /* SettingsView.swift */,
 				29B8207825BE7B7100200ACB /* SearchView.swift */,
+				29229AD725C4125C00705BB9 /* DetailsView.swift */,
 				29B8207925BE7B7100200ACB /* TabbarView.swift */,
 				29B8207A25BE7B7100200ACB /* Home Views */,
 			);
@@ -514,6 +517,7 @@
 				A7012DB725B7E30400DEDC24 /* ContentView.swift in Sources */,
 				A7012DB525B7E30400DEDC24 /* MovieKunoApp.swift in Sources */,
 				29B821DA25BEAC2700200ACB /* Text.swift in Sources */,
+				29229AD825C4125C00705BB9 /* DetailsView.swift in Sources */,
 				29F2985225BA7A0E00EF3936 /* Strings.swift in Sources */,
 				29B8208325BE7B7100200ACB /* SearchView.swift in Sources */,
 				29F2985125BA7A0E00EF3936 /* Assets.swift in Sources */,

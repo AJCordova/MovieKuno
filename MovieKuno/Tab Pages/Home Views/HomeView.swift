@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var movies: Movies = Movie.arrayTemplate
+    @Binding var isPresented: Bool
     var body: some View {
         VStack {
             ScrollView {
@@ -18,6 +19,11 @@ struct HomeView: View {
                     ForEach(movies, id: \.self) { movie in
                         MovieCell(movie: movie)
                             .modifier(CardModifier())
+                            .onTapGesture {
+                                withAnimation(.easeIn) {
+                                    isPresented.toggle()
+                                }
+                            }
                     }
                 }
             }
@@ -44,12 +50,12 @@ struct RowHeaderView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            HomeView().colorScheme(.light)
-            HomeView().colorScheme(.dark)
-        }
-        .preferredColorScheme(.dark)
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            HomeView().colorScheme(.light)
+//            HomeView().colorScheme(.dark)
+//        }
+//        .preferredColorScheme(.dark)
+//    }
+//}
