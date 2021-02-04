@@ -50,12 +50,12 @@ struct RowHeaderView: View {
     }
 }
 
-//struct HomeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Group {
-//            HomeView().colorScheme(.light)
-//            HomeView().colorScheme(.dark)
-//        }
-//        .preferredColorScheme(.dark)
-//    }
-//}
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            HomeView(isPresented: .constant(true)).colorScheme(.light)
+            HomeView(isPresented: .constant(true)).colorScheme(.dark)
+        }
+        .preferredColorScheme(.dark)
+    }
+}

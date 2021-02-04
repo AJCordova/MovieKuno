@@ -18,4 +18,3 @@ struct CardModifier: ViewModifier {
             .shadow(color: Color(Asset.textColorSecondary.color).opacity(0.5), radius: 5, x: 0, y: 0)
     }
 }
-
