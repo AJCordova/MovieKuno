@@ -38,6 +38,9 @@ struct TabbarView: View {
 }
 struct TabbarView_Previews: PreviewProvider {
     static var previews: some View {
-        TabbarView()
+        Group {
+            TabbarView().colorScheme(.dark)
+            TabbarView().colorScheme(.light)
+        }
     }
 }
