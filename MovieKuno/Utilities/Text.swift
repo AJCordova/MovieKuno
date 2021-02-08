@@ -14,6 +14,6 @@ struct Title: ViewModifier {
             .font(.system(size: 17, weight: .bold))
             .foregroundColor(Color(Asset.textColorMain.color))
             .fixedSize(horizontal: false, vertical: true)
-            .frame(minHeight: 35)
+            .frame(minHeight: 30)
     }
 }

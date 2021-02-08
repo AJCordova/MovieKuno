@@ -11,22 +11,36 @@ import SwiftUI
 
 struct TabbarView: View {
     @State var selected: Int = 0
+    @State var isPresented = false
     var body: some View {
-        TabView(selection: $selected) {
-            HomeView().tabItem {
-                Text("Home")
+        if !isPresented {
+            TabView(selection: $selected) {
+                HomeView(isPresented: $isPresented).tabItem {
+                    Text("Home")
+                }
+                SearchView().tabItem {
+                    Text("Search")
+                }
+                SettingsView().tabItem {
+                    Text("Settings")
+                }
             }
-            SearchView().tabItem {
-                Text("Search")
-            }
-            SettingsView().tabItem {
-                Text("Settings")
-            }
+            .transition(
+                .scale(scale: 0,
+                       anchor: .center))
+        } else {
+            DetailsView(isPresented: $isPresented)
+                .transition(
+                    .scale(scale: 0,
+                           anchor: .center))
         }
     }
 }
 struct TabbarView_Previews: PreviewProvider {
     static var previews: some View {
-        TabbarView()
+        Group {
+            TabbarView().colorScheme(.dark)
+            TabbarView().colorScheme(.light)
+        }
     }
 }

@@ -19,15 +19,15 @@ scheme("MovieKunoUITests")
 
 # Where should the resulting screenshots be stored?
 # Remove the '#' if using dark mode
-output_directory("MovieKunoUITests/screenshots/dark_mode/")
+# output_directory("MovieKunoUITests/screenshots/dark_mode/")
 # Remove the '#' if using light mode
-# output_directory("MovieKunoUITests/screenshots/light_mode/")
+output_directory("MovieKunoUITests/screenshots/light_mode/")
 
 # remove the '#' to clear all previously generated screenshots before creating new ones
 clear_previous_screenshots(true)
 
 # Enabling this option will configure the Simulator to be in dark mode (false for light, true for dark)
-dark_mode(true)
+dark_mode(false)
 
 # Remove the '#' to set the status bar to 9:41 AM, and show full battery and reception.
 # override_status_bar(true)
