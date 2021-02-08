@@ -30,8 +30,6 @@ struct HomeView: View {
             .background(Color(Asset.background.color))
         }
     }
-    
-    
 }
 
 struct RowHeaderView: View {
